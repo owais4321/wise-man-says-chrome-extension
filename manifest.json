@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Wise Man says",
+  "description": "Quotes and Advices",
+  "version": "1.0.0",
+  "icons": { "128": "wise.png" },
+  "browser_action": {
+    "default_icon": "wise.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "popup.js"
+    ]
+  },
+  "permissions": ["activeTab","https://api.adviceslip.com/advice"]
+
+}
